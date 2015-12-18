@@ -190,14 +190,14 @@ for i in range(6):
     plt.figure(i)
     b = mh_sample1[:,i]
 
-    # plt.subplot(2, 1, 1)
+    plt.subplot(2, 1, 1)
     plt.plot(np.arange(n+1), b)
     plt.xlabel('Samples')
     plt.ylabel('value of sampled p%i' % (i+1))
 
-    # plt.subplot(2, 1, 2)
-    # plt.hist(b, bins=80)
-    # plt.xlabel('value of sampled p%i' % (i+1))
-    # plt.ylabel('observations')
+    plt.subplot(2, 1, 2)
+    plt.hist(b, bins=80)
+    plt.xlabel('value of sampled p%i' % (i+1))
+    plt.ylabel('observations')
 
 plt.show()
